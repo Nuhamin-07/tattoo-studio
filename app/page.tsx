@@ -1,19 +1,51 @@
+"use client"
+
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleGallery = () => {
+    router.push("/gallery");
+  }
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="w-full">
+      <section className="relative h-[80vh] w-full">
         <Image
-          className="dark:invert h-200 w-[500px]"
           src="/images/tattoo-artist-one.jpg"
-          alt="Tattoo artist working on a client."
-          width={100}
-          height={150}
+          alt="Tattoo artist working on a client"
+          fill
           priority
+          className="object-cover"
         />
 
-      </main>
-    </div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+          <h1 className="text-5xl font-bold text-white md:text-7xl">
+            Ink That Tells Your Story
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-200">
+            Custom tattoos designed with intention and crafted by artists
+            who turn your ideas into something uniquely yours.
+          </p>
+
+          <div className="mt-8 flex gap-4">
+            <button className="rounded-full bg-white px-6 py-3 font-medium text-black transition hover:bg-gray-200">
+              Book Appointment
+            </button>
+
+            <button onClick={handleGallery} className="rounded-full border border-white px-6 py-3 font-medium text-white transition hover:bg-white hover:text-black">
+              View Gallery
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
