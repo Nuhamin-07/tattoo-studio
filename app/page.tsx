@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import services from "@/data/services";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
   const router = useRouter();
@@ -54,22 +55,24 @@ export default function Home() {
 
         <div className="mt-10 grid grid-cols-1 gap-8 px-10 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <div key={service.title} className="overflow-hidden rounded-xl shadow-lg">
+            <Card key={service.id}>
               <img
                 src={service.image}
                 alt={service.alt}
                 className="h-56 w-full object-cover"
               />
+              <CardTitle className="px-4 pt-2">
 
-              <div className="p-6">
                 <h3 className="text-xl font-semibold">
                   {service.title}
                 </h3>
-
-                <p className="mt-2 text-gray-600">
-                  {service.description}              </p>
-              </div>
-            </div>
+              </CardTitle>
+              <CardContent>
+                <p className="text-gray-600">
+                  {service.description}
+                </p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </section>
@@ -119,6 +122,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </main >
   );
 }
