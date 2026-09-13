@@ -5,6 +5,7 @@ const galleries = [
         alt: "Gallery one",
         title: "Gallery one",
         description: "Gallery one",
+        artist: "Nuhamin Gulilat"
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const galleries = [
         alt: "Gallery two",
         title: "Gallery two",
         description: "Gallery two",
+        artist: "Nuhamin Gulilat"
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const galleries = [
         alt: "Gallery three",
         title: "Gallery three",
         description: "Gallery three",
+        artist: "Nuhamin Gulilat"
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const galleries = [
         alt: "Gallery four",
         title: "Gallery four",
         description: "Gallery four",
+        artist: "Nuhamin Gulilat"
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ const galleries = [
         alt: "Gallery five",
         title: "Gallery five",
         description: "Gallery five",
+        artist: "Nuhamin Gulilat"
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ const galleries = [
         alt: "Gallery six",
         title: "Gallery six",
         description: "Gallery six",
+        artist: "Nuhamin Gulilat"
     },
 ]
 

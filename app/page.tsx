@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import ServiceSection from "@/components/service-section"
+import Gallery from "@/components/gallery-preview"
 
 export default function Home() {
   const router = useRouter();
@@ -49,30 +50,7 @@ export default function Home() {
         </div>
       </section>
       <ServiceSection />
-      <section>
-        <h2 className="text-5xl font-bold text-center mt-10">Gallery</h2>
-        <p className="text-center text-xl mt-2 text-gray-400 italic font-light">Turning ideas into permanent art.</p>
-        <div className="mt-10 grid grid-cols-1 gap-8 px-10 md:grid-cols-2 lg:grid-cols-3">
-          {/* {gallery.map((image) => (
-            <div key={image.alt} className="overflow-hidden rounded-xl shadow-lg">
-              <img
-                src={image.image}
-                alt={image.alt}
-                className="h-56 w-full object-cover"
-              />
-
-              <div className="p-6">
-                <h3 className="text-xl font-semibold">
-                  {image.title}
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  {image.description}              </p>
-              </div>
-            </div>
-          ))} */}
-        </div>
-      </section>
+      <Gallery />
       <section>
         <h2 className="text-5xl font-bold text-center mt-10">Meet the Artist</h2>
         <p className="text-center text-xl mt-2 text-gray-400 italic font-light">Meet the talented artists behind the ink.</p>
