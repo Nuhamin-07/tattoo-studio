@@ -9,28 +9,30 @@ export default function Gallery() {
             <h2 className="text-5xl font-bold text-center mt-10">Gallery</h2>
             <p className="text-center text-xl mt-2 text-gray-400 italic font-light">Turning ideas into permanent art.</p>
 
-            <Card className="mt-10 grid grid-cols-1 gap-8 px-10 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-10 grid grid-cols-1 gap-8 px-10 md:grid-cols-2 lg:grid-cols-3">
                 {galleries.map((image) => (
-                    <Tooltip key={image.title}>
-                        <TooltipTrigger>
-                            <div className="overflow-hidden rounded-xl shadow-lg">
+                    <Card key={image.title} className="p-0">
+                        <Tooltip >
+                            <TooltipTrigger>
+                                {/* <div className="overflow-hidden rounded-xl shadow-lg"> */}
                                 <Image
                                     src={image.image}
                                     alt={image.alt}
-                                    className="h-56 w-full object-cover"
-                                    width={200}
-                                    height={200}
+                                    className="h-75 w-full object-cover"
+                                    width={100}
+                                    height={150}
                                 />
                                 <TooltipContent>
                                     {image.title}
                                     <p className="text-(--muted-foreground)">by</p>
                                     <b> {image.artist}</b>
                                 </TooltipContent>
-                            </div>
-                        </TooltipTrigger>
-                    </Tooltip>
+                                {/* </div> */}
+                            </TooltipTrigger>
+                        </Tooltip>
+                    </Card>
                 ))}
-            </Card>
+            </div>
 
         </section >
     )
