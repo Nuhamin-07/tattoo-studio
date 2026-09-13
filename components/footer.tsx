@@ -19,10 +19,10 @@ export default function Footer() {
 
                 <div>
                     <h3 className="text-white font-semibold mb-4">Contact Info</h3>
-                    <p>123 Tattoo Street</p>
+                    <p>Kera downtown building</p>
                     <p>Addis Ababa, Ethiopia</p>
-                    <p>+251 912 345 678</p>
-                    <p>[EMAIL_ADDRESS]</p>
+                    <p>+251 912 00 ** **</p>
+                    <p>tatoo@gmail.com</p>
                 </div>
             </div>
 
