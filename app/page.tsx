@@ -7,6 +7,7 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import ServiceSection from "@/components/service-section"
 import Gallery from "@/components/gallery-preview"
 import Artist from "@/components/artist-section"
+import Footer from "@/components/footer"
 
 export default function Home() {
   const router = useRouter();
@@ -53,6 +54,7 @@ export default function Home() {
       <ServiceSection />
       <Gallery />
       <Artist />
+      <Footer />
     </main >
   );
 }
