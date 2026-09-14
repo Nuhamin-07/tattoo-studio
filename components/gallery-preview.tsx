@@ -30,6 +30,6 @@ export default function Gallery() {
                     </Card>
                 ))}
             </div>
-        </section >
+        </section>
     )
 }
