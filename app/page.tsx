@@ -52,7 +52,12 @@ export default function Home() {
         </div>
       </section>
       <ServiceSection />
+
+      <h2 className="text-5xl font-bold text-center mt-10">Gallery</h2>
+      <p className="text-center text-xl mt-2 text-gray-400 font-light">Turning ideas into permanent art.</p>
       <Gallery />
+      <Link href="/gallery" className="flex justify-end px-10 mt-4 text-blue-500 font-medium underline text-lg">View full gallery</Link>
+
       <Artist />
       <Footer />
     </main >

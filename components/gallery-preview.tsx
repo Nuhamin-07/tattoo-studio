@@ -2,14 +2,10 @@ import galleries from "@/data/gallery";
 import { Card, CardContent, CardTitle } from "./ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Gallery() {
     return (
         <section>
-            <h2 className="text-5xl font-bold text-center mt-10">Gallery</h2>
-            <p className="text-center text-xl mt-2 text-gray-400 font-light">Turning ideas into permanent art.</p>
-
             <div className="mt-10 grid grid-cols-1 gap-8 px-10 md:grid-cols-2 lg:grid-cols-3">
                 {galleries.map((image) => (
                     <Card key={image.title} className="p-0">
@@ -34,7 +30,6 @@ export default function Gallery() {
                     </Card>
                 ))}
             </div>
-            <Link href="/gallery" className="flex justify-end px-10 mt-4 text-blue-500 font-medium underline text-lg">View full gallery</Link>
         </section >
     )
 }
