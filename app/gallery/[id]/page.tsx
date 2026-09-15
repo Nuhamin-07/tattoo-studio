@@ -3,6 +3,14 @@
 import { useParams } from "next/navigation"
 import galleries from "@/data/gallery"
 import Image from "next/image"
+import {
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 export default function GalleryDetail() {
     const params = useParams()
@@ -12,14 +20,28 @@ export default function GalleryDetail() {
 
     return (
         <div>
-            <h1 className="text-5xl font-bold text-center mt-10">{gallery?.title}</h1>
-            <div className="flex items-center px-10 justify-center gap-8">
+            <Breadcrumb className="px-10 my-4 text-lg">
+                <BreadcrumbList>
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbItem>
+                        <BreadcrumbLink href="/gallery">Gallery</BreadcrumbLink>
+                    </BreadcrumbItem>
+                    <BreadcrumbSeparator />
+                    <BreadcrumbPage>{gallery?.title}</BreadcrumbPage>
+                </BreadcrumbList>
+            </Breadcrumb>
+            <div className="flex flex-col items-center px-10 justify-center gap-8">
                 <Image
                     src={gallery?.image || ""}
                     alt={gallery?.alt || ""}
-                    width={500}
+                    width={300}
                     height={500}
+                    className="rounded-xl shadow-lg"
                 />
+                <h3 className="text-5xl font-bold text-center">{gallery?.title}</h3>
                 <p className="text-center text-xl mt-2 text-gray-400 font-light">{gallery?.description}</p>
             </div>
         </div>
