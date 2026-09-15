@@ -43,6 +43,8 @@ export default function GalleryDetail() {
                 />
                 <h3 className="text-5xl font-bold text-center">{gallery?.title}</h3>
                 <p className="text-center text-xl mt-2 text-gray-400 font-light">{gallery?.description}</p>
+                <p>Tatooed by {gallery?.artist}</p>
+                <p>{gallery?.style} . {gallery?.placement}</p>
             </div>
         </div>
     )
