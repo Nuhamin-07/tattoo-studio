@@ -12,6 +12,8 @@ export default function Navbar() {
                 >Contact Us</Link>
                 <Link href="/gallery" className="text-sm font-medium text-gray-700 transition hover:text-black"
                 >Gallery</Link>
+                <Link href="/appointment" className="text-sm font-medium text-gray-700 transition hover:text-black"
+                >Book an Appointment</Link>
             </div>
         </nav>
     )

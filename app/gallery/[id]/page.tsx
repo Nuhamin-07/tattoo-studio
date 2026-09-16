@@ -34,12 +34,12 @@ export default function GalleryDetail() {
                     <BreadcrumbPage>{gallery?.title}</BreadcrumbPage>
                 </BreadcrumbList>
             </Breadcrumb>
-            <div className="flex flex items-center px-10 justify-center gap-8">
+            <div className="flex flex items-center justify-center gap-8 min-h-[600px]">
                 <Image
                     src={gallery?.image || ""}
                     alt={gallery?.alt || ""}
-                    width={700}
-                    height={500}
+                    width={400}
+                    height={400}
                     className="rounded-xl shadow-lg"
                 />
                 <div className="flex flex-col gap-8">
@@ -47,7 +47,7 @@ export default function GalleryDetail() {
                     <p className="text-left text-xl mt-2 text-gray-400 font-light max-w-[700px]">{gallery?.description}</p>
                     <div className="flex items-center justify-center gap-8">
                         <p className="text-gray-400">Tattoo by <span className="text-black-400 font-bold">{gallery?.artist}</span></p>
-                        <p className="text-gray-400">{gallery?.style} * <span className="text-black-400 font-bold">{gallery?.placement}</span></p>
+                        <p className="text-gray-400">{gallery?.style} - <span className="text-black-400 font-bold">{gallery?.placement}</span></p>
                     </div>
                     <Button className="w-md mx-auto bg-gray-900 hover:bg-gray-600 text-white cursor-pointer">
                         Book an Appointment
