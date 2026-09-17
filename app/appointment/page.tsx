@@ -19,8 +19,15 @@ export default function Appointment() {
     const [date, setDate] = React.useState<Date | undefined>(undefined);
 
     return (
-        <main className="mx-auto px-12 py-10 shadow-lg rounded-lg">
-            <div className="mb-10 text-center">
+        <main className="mx-auto mt-10 px-12 py-10 shadow-lg rounded-lg"
+        // style={{
+        //     backgroundImage: "url('/images/appointment-bg.jpg')",
+        //     backgroundSize: "cover",
+        //     backgroundPosition: "center",
+        //     backgroundRepeat: "no-repeat",
+        // }}
+        >
+            <div className="mb-10 text-center bg-white/80 px-4 py-8 rounded-lg">
                 <h1 className="text-3xl font-bold">
                     Book an Appointment
                 </h1>
@@ -300,6 +307,7 @@ export default function Appointment() {
                         type="submit"
                         size="lg"
                         className="w-full sm:w-auto"
+                        style={{ display: "block", margin: "0 auto", width: "100%" }}
                     >
                         Request Appointment
                     </Button>

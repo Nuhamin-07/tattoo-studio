@@ -14,7 +14,7 @@ export default function Navbar() {
         { href: "/appointment", label: "Book an Appointment" }
     ];
     return (
-        <nav className="border-b border-gray-200 bg-white">
+        <nav className="border-b border-gray-200 bg-white sticky top-0 z-50">
             <div className="flex w-full items-center justify-between gap-8 px-12 py-4">
                 <Link href="/"><h3 className="text-xl font-bold text-black transition hover:text-gray-700">Tattoo Studio</h3></Link>
                 <div className="flex gap-8">
