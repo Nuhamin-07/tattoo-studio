@@ -43,6 +43,16 @@ export default function Appointment() {
                         </label>
                     </div>
                 </div>
+                <div className="flex gap-3">
+                    <div>
+                        <p className="text-sm">Select Preferred Date</p>
+                        <input className="rounded-md px-4 py-2" type="date" />
+                    </div>
+                    <div>
+                        <p className="text-sm">Select Preferred Time</p>
+                        <input className="rounded-md px-4 py-2" type="time" />
+                    </div>
+                </div>
             </form>
         </div>
     )
