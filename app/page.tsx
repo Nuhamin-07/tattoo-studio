@@ -11,8 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import ServiceSection from "@/components/service-section";
 import Gallery from "@/components/gallery-preview";
-import Artist from "@/components/artist-section";
 import Footer from "@/components/footer";
+import artists from "@/data/artists";
 
 const reasons = [
   {
@@ -140,7 +140,66 @@ export default function Home() {
       </section>
 
       {/* Artists */}
-      <Artist />
+      <section className="px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+              Meet The Artists
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+              The Artists Behind the Ink
+            </h2>
+
+            <p className="mt-4 leading-7 text-gray-600">
+              Our artists bring different styles, techniques, and creative
+              perspectives to every piece we create.
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {artists.map((artist) => (
+              <Link
+                key={artist.name}
+                href={`/artists/${artist.name.toLowerCase()}`}
+                className="group"
+              >
+                <div className="overflow-hidden rounded-2xl bg-gray-100">
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image
+                      src={artist.image}
+                      alt={artist.name}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <h3 className="text-lg font-semibold">
+                    {artist.name}
+                  </h3>
+
+                  <p className="mt-1 text-sm text-gray-500">
+                    {artist.role}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/artists"
+              className="inline-flex items-center gap-2 font-semibold transition-all hover:gap-3"
+            >
+              Meet All Artists
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Why Choose Us */}
       <section className="bg-gray-950 px-4 py-20 text-white sm:px-6 lg:px-8">
