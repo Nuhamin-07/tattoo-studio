@@ -102,7 +102,7 @@ export default function AboutPage() {
                     {/* Image */}
                     <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                         <Image
-                            src="/images/studio.jpg"
+                            src="/images/studio.jfif"
                             alt="Inside our tattoo studio"
                             fill
                             className="object-cover transition-transform duration-500 hover:scale-105"
@@ -291,7 +291,7 @@ export default function AboutPage() {
 
                         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
                             <Image
-                                src="/images/studio-2.jpg"
+                                src="/images/studio-2.jfif"
                                 alt="Tattoo studio interior"
                                 fill
                                 className="object-cover"
