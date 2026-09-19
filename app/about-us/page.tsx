@@ -8,6 +8,7 @@ import {
     ShieldCheck,
     Sparkles,
 } from "lucide-react";
+import artists from "@/data/artists";
 
 import { Button } from "@/components/ui/button";
 
@@ -59,40 +60,17 @@ const expectations = [
     },
 ];
 
-const artists = [
-    {
-        name: "Dereje",
-        role: "Tattoo Artist",
-        image: "/images/artists/dereje.jpg",
-    },
-    {
-        name: "Selam",
-        role: "Tattoo Artist",
-        image: "/images/artists/selam.jpg",
-    },
-    {
-        name: "Dawit",
-        role: "Tattoo Artist",
-        image: "/images/artists/dawit.jpg",
-    },
-    {
-        name: "Alem",
-        role: "Tattoo Artist",
-        image: "/images/artists/alem.jpg",
-    },
-];
-
 export default function AboutPage() {
     return (
         <main>
             {/* Hero */}
             <section className="relative min-h-[500px] overflow-hidden bg-gray-950">
                 <Image
-                    src="/images/about-hero.jpg"
+                    src="/images/about-hero.jfif"
                     alt="Tattoo artist working in the studio"
                     fill
                     priority
-                    className="object-cover opacity-50"
+                    className="object-cover opacity-80"
                 />
 
                 <div className="absolute inset-0 bg-black/60" />
