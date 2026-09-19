@@ -66,7 +66,7 @@ export default function AboutPage() {
             {/* Hero */}
             <section className="relative min-h-[500px] overflow-hidden bg-gray-950">
                 <Image
-                    src="/images/about-hero.jfif"
+                    src="/images/about-hero-2.jfif"
                     alt="Tattoo artist working in the studio"
                     fill
                     priority
