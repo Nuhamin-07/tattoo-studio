@@ -10,6 +10,7 @@ export default function Navbar() {
         { href: "/", label: "Home" },
         { href: "/about-us", label: "About" },
         { href: "/gallery", label: "Gallery" },
+        { href: "/artists", label: "Artists" },
         { href: "/contact-us", label: "Contact" },
     ];
 
@@ -45,8 +46,8 @@ export default function Navbar() {
                                 key={link.href}
                                 href={link.href}
                                 className={`relative text - sm font - medium transition - colors ${isActive
-                                        ? "text-black"
-                                        : "text-gray-500 hover:text-black"
+                                    ? "text-black"
+                                    : "text-gray-500 hover:text-black"
                                     } `}
                             >
                                 {link.label}
