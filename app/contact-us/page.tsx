@@ -8,6 +8,8 @@ import {
     Phone,
     Send,
 } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -127,7 +129,7 @@ export default function ContactPage() {
                                     aria-label="Instagram"
                                     className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
                                 >
-                                    IG
+                                    <FaInstagram />
                                 </a>
 
                                 <a
@@ -135,7 +137,7 @@ export default function ContactPage() {
                                     aria-label="Facebook"
                                     className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
                                 >
-                                    f
+                                    <FaFacebook />
                                 </a>
 
                                 <a
@@ -143,7 +145,7 @@ export default function ContactPage() {
                                     aria-label="TikTok"
                                     className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
                                 >
-                                    TT
+                                    <FaTiktok />
                                 </a>
                             </div>
                         </div>
