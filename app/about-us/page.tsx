@@ -64,7 +64,7 @@ export default function AboutPage() {
     return (
         <main>
             {/* Hero */}
-            <section className="relative min-h-[500px] overflow-hidden bg-gray-950">
+            <section className="relative min-h-[400px] sm:min-h-[500px] overflow-hidden bg-gray-950">
                 <Image
                     src="/images/about-hero-2.jfif"
                     alt="Tattoo artist working in the studio"
@@ -75,19 +75,19 @@ export default function AboutPage() {
 
                 <div className="absolute inset-0 bg-black/60" />
 
-                <div className="relative z-10 flex min-h-[500px] items-center px-4 py-20 sm:px-6 lg:px-8">
+                <div className="relative z-10 flex min-h-[400px] sm:min-h-[500px] items-center px-4 py-16 sm:py-20 sm:px-6 lg:px-8">
                     <div className="mx-auto w-full max-w-5xl text-center text-white">
-                        <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-gray-300">
+                        <p className="mb-3 sm:mb-4 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gray-300">
                             Our Studio
                         </p>
 
-                        <h1 className="text-4xl font-bold md:text-6xl">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold">
                             Art That Tells
                             <br />
                             Your Story
                         </h1>
 
-                        <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-gray-300 md:text-lg">
+                        <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-300 md:text-lg">
                             We create meaningful, custom tattoos in a
                             professional and welcoming studio where creativity
                             and individuality come first.
@@ -97,10 +97,10 @@ export default function AboutPage() {
             </section>
 
             {/* Our Story */}
-            <section className="px-4 py-20 sm:px-6 lg:px-8">
-                <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-2">
+            <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
+                <div className="mx-auto grid max-w-6xl items-center gap-8 sm:gap-12 lg:grid-cols-2">
                     {/* Image */}
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+                    <div className="relative aspect-[4/3] sm:aspect-[4/5] overflow-hidden rounded-2xl">
                         <Image
                             src="/images/studio.jfif"
                             alt="Inside our tattoo studio"
@@ -111,15 +111,15 @@ export default function AboutPage() {
 
                     {/* Content */}
                     <div>
-                        <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                             Our Story
                         </p>
 
-                        <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                             More Than Just Ink
                         </h2>
 
-                        <div className="mt-6 space-y-4 leading-7 text-gray-600">
+                        <div className="mt-4 sm:mt-6 space-y-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
                             <p>
                                 We believe every tattoo has a story behind it.
                                 Our studio was created as a space where
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
                         <Link
                             href="/appointment"
-                            className="mt-8 inline-flex items-center gap-2 font-semibold transition hover:gap-3"
+                            className="mt-6 sm:mt-8 inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition hover:gap-3"
                         >
                             Start Your Tattoo Journey
                             <ArrowRight className="h-4 w-4" />
@@ -154,42 +154,42 @@ export default function AboutPage() {
             </section>
 
             {/* Philosophy */}
-            <section className="bg-gray-950 px-4 py-20 text-white sm:px-6 lg:px-8">
+            <section className="bg-gray-950 px-4 py-12 sm:py-20 text-white sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="mx-auto max-w-2xl text-center">
-                        <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
                             What We Believe
                         </p>
 
-                        <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                             Our Philosophy
                         </h2>
 
-                        <p className="mt-4 leading-7 text-gray-400">
+                        <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-400">
                             Great tattoos are more than beautiful designs.
                             They are personal pieces of art created with
                             intention, care, and craftsmanship.
                         </p>
                     </div>
 
-                    <div className="mt-12 grid gap-6 md:grid-cols-3">
+                    <div className="mt-8 sm:mt-12 grid gap-6 md:grid-cols-3">
                         {values.map((value) => {
                             const Icon = value.icon;
 
                             return (
                                 <div
                                     key={value.title}
-                                    className="rounded-2xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+                                    className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 transition hover:bg-white/10"
                                 >
                                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-black">
                                         <Icon className="h-6 w-6" />
                                     </div>
 
-                                    <h3 className="mt-6 text-xl font-semibold">
+                                    <h3 className="mt-6 text-lg sm:text-xl font-semibold">
                                         {value.title}
                                     </h3>
 
-                                    <p className="mt-3 leading-7 text-gray-400">
+                                    <p className="mt-3 text-sm sm:text-base leading-6 sm:leading-7 text-gray-400">
                                         {value.description}
                                     </p>
                                 </div>
@@ -200,19 +200,19 @@ export default function AboutPage() {
             </section>
 
             {/* Artists */}
-            <section className="px-4 py-20 sm:px-6 lg:px-8">
+            <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                         <div>
-                            <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                                 The Team
                             </p>
 
-                            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                                 Meet Our Artists
                             </h2>
 
-                            <p className="mt-3 max-w-xl text-gray-600">
+                            <p className="mt-2 sm:mt-3 max-w-xl text-sm sm:text-base text-gray-600">
                                 Our artists bring different styles,
                                 perspectives, and creative approaches to every
                                 piece.
@@ -221,18 +221,18 @@ export default function AboutPage() {
 
                         <Link
                             href="/artists"
-                            className="inline-flex items-center gap-2 font-semibold hover:gap-3"
+                            className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold hover:gap-3"
                         >
                             Meet the Team
                             <ArrowRight className="h-4 w-4" />
                         </Link>
                     </div>
 
-                    <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+                    <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                         {artists.map((artist) => (
                             <Link
                                 key={artist.name}
-                                href={`/ artists / ${artist.name.toLowerCase()} `}
+                                href={`/artists/${artist.name.toLowerCase()}`}
                                 className="group"
                             >
                                 <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
@@ -240,15 +240,16 @@ export default function AboutPage() {
                                         src={artist.image}
                                         alt={artist.name}
                                         fill
+                                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
 
-                                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 pt-16 text-white">
-                                        <h3 className="font-semibold">
+                                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-4 sm:p-5 pt-12 sm:pt-16 text-white">
+                                        <h3 className="font-semibold text-base sm:text-lg">
                                             {artist.name}
                                         </h3>
 
-                                        <p className="mt-1 text-sm text-gray-300">
+                                        <p className="mt-0.5 text-xs sm:text-sm text-gray-300">
                                             {artist.role}
                                         </p>
                                     </div>
@@ -260,19 +261,19 @@ export default function AboutPage() {
             </section>
 
             {/* Studio */}
-            <section className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+            <section className="bg-gray-50 px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
-                    <div className="grid items-center gap-12 lg:grid-cols-2">
+                    <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2">
                         <div>
-                            <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                                 The Experience
                             </p>
 
-                            <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                                 A Studio Built Around You
                             </h2>
 
-                            <p className="mt-5 leading-7 text-gray-600">
+                            <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
                                 Getting a tattoo should be an experience you
                                 feel comfortable with from beginning to end.
                                 Our studio is designed to provide a relaxed,
@@ -280,7 +281,7 @@ export default function AboutPage() {
                                 directly with your artist.
                             </p>
 
-                            <p className="mt-4 leading-7 text-gray-600">
+                            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
                                 We believe good communication is just as
                                 important as good artwork. That is why we take
                                 the time to understand your ideas, answer your
@@ -302,24 +303,24 @@ export default function AboutPage() {
             </section>
 
             {/* What to Expect */}
-            <section className="px-4 py-20 sm:px-6 lg:px-8">
+            <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="mx-auto max-w-2xl text-center">
-                        <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                             From Start to Finish
                         </p>
 
-                        <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                             What You Can Expect
                         </h2>
 
-                        <p className="mt-4 text-gray-600">
+                        <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600">
                             We want every part of your tattoo experience to
                             feel professional, comfortable, and personal.
                         </p>
                     </div>
 
-                    <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="mt-8 sm:mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                         {expectations.map((item, index) => {
                             const Icon = item.icon;
 
@@ -353,17 +354,17 @@ export default function AboutPage() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gray-950 px-4 py-20 text-center text-white sm:px-6 lg:px-8">
+            <section className="bg-gray-950 px-4 py-12 sm:py-20 text-center text-white sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl">
-                    <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
+                    <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
                         Your Story Starts Here
                     </p>
 
-                    <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                    <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                         Ready for Your Next Tattoo?
                     </h2>
 
-                    <p className="mt-4 leading-7 text-gray-400">
+                    <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-400">
                         Tell us about your idea and let&apos;s create
                         something that is uniquely yours.
                     </p>
@@ -371,7 +372,7 @@ export default function AboutPage() {
                     <Link href="/appointment">
                         <Button
                             size="lg"
-                            className="mt-7 bg-white text-black hover:bg-gray-200"
+                            className="mt-6 sm:mt-7 bg-white text-black hover:bg-gray-200 w-full sm:w-auto"
                         >
                             Book an Appointment
                         </Button>

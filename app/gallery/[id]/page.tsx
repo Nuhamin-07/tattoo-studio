@@ -31,7 +31,7 @@ export default async function GalleryDetailPage({
     return (
         <main className="min-h-screen">
             {/* Back to Gallery */}
-            <section className="px-6 pt-8">
+            <section className="px-4 pt-6 sm:px-6 sm:pt-8">
                 <div className="mx-auto max-w-7xl">
                     <Link
                         href="/gallery"
@@ -44,8 +44,8 @@ export default async function GalleryDetailPage({
             </section>
 
             {/* Main Tattoo */}
-            <section className="px-6 py-10 sm:py-14 lg:py-16">
-                <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
+            <section className="px-4 py-8 sm:px-6 sm:py-14 lg:py-16">
+                <div className="mx-auto grid max-w-7xl gap-8 sm:gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
                     {/* Image */}
                     <div className="overflow-hidden rounded-2xl bg-gray-100">
                         <div className="relative aspect-[4/5] w-full">
@@ -62,71 +62,71 @@ export default async function GalleryDetailPage({
 
                     {/* Information */}
                     <div>
-                        <p className="text-sm font-medium uppercase tracking-[0.25em] text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gray-500">
                             Tattoo Detail
                         </p>
 
-                        <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+                        <h1 className="mt-2 sm:mt-4 text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight">
                             {tattoo.title}
                         </h1>
 
-                        <p className="mt-5 text-lg leading-8 text-gray-600">
+                        <p className="mt-3 sm:mt-5 text-sm sm:text-lg leading-6 sm:leading-8 text-gray-600">
                             {tattoo.description}
                         </p>
 
                         {/* Details */}
-                        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            <div className="rounded-xl border p-4">
+                        <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2">
+                            <div className="rounded-xl border p-3.5 sm:p-4">
                                 <div className="flex items-center gap-3">
-                                    <User className="h-5 w-5 text-gray-500" />
+                                    <User className="h-5 w-5 text-gray-500 shrink-0" />
                                     <div>
-                                        <p className="text-sm text-gray-500">Artist</p>
-                                        <p className="font-semibold">{tattoo.artist}</p>
+                                        <p className="text-xs text-gray-500">Artist</p>
+                                        <p className="font-semibold text-sm sm:text-base">{tattoo.artist}</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="rounded-xl border p-4">
+                            <div className="rounded-xl border p-3.5 sm:p-4">
                                 <div className="flex items-center gap-3">
-                                    <Ruler className="h-5 w-5 text-gray-500" />
+                                    <Ruler className="h-5 w-5 text-gray-500 shrink-0" />
                                     <div>
-                                        <p className="text-sm text-gray-500">Style</p>
-                                        <p className="font-semibold">{tattoo.style}</p>
+                                        <p className="text-xs text-gray-500">Style</p>
+                                        <p className="font-semibold text-sm sm:text-base">{tattoo.style}</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="rounded-xl border p-4">
+                            <div className="rounded-xl border p-3.5 sm:p-4">
                                 <div className="flex items-center gap-3">
-                                    <MapPin className="h-5 w-5 text-gray-500" />
+                                    <MapPin className="h-5 w-5 text-gray-500 shrink-0" />
                                     <div>
-                                        <p className="text-sm text-gray-500">Placement</p>
-                                        <p className="font-semibold">{tattoo.placement}</p>
+                                        <p className="text-xs text-gray-500">Placement</p>
+                                        <p className="font-semibold text-sm sm:text-base">{tattoo.placement}</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="rounded-xl border p-4">
+                            <div className="rounded-xl border p-3.5 sm:p-4">
                                 <div className="flex items-center gap-3">
-                                    <Calendar className="h-5 w-5 text-gray-500" />
+                                    <Calendar className="h-5 w-5 text-gray-500 shrink-0" />
                                     <div>
-                                        <p className="text-sm text-gray-500">Availability</p>
-                                        <p className="font-semibold">By Appointment</p>
+                                        <p className="text-xs text-gray-500">Availability</p>
+                                        <p className="font-semibold text-sm sm:text-base">By Appointment</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         {/* CTA */}
-                        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                            <Link href="/appointment">
+                        <div className="mt-6 sm:mt-8 flex flex-col gap-3 sm:flex-row">
+                            <Link href="/appointment" className="w-full sm:w-auto">
                                 <Button size="lg" className="w-full sm:w-auto">
                                     Book an Appointment
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </Link>
 
-                            <Link href={`/artists/${tattoo.artist.toLowerCase()}`}>
+                            <Link href="/artists" className="w-full sm:w-auto">
                                 <Button
                                     size="lg"
                                     variant="outline"
@@ -141,17 +141,17 @@ export default async function GalleryDetailPage({
             </section>
 
             {/* About the Tattoo */}
-            <section className="bg-gray-950 px-6 py-16 text-white sm:py-20">
+            <section className="bg-gray-950 px-4 py-12 text-white sm:px-6 sm:py-20">
                 <div className="mx-auto max-w-4xl text-center">
-                    <p className="text-sm font-medium uppercase tracking-[0.25em] text-gray-400">
+                    <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gray-400">
                         About The Design
                     </p>
 
-                    <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                    <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                         Made With Intention
                     </h2>
 
-                    <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-400 md:text-lg">
+                    <p className="mx-auto mt-3 sm:mt-5 max-w-2xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-400 md:text-lg">
                         Every tattoo we create is designed with attention to detail,
                         placement, style, and the individual story behind the artwork.
                     </p>
@@ -160,15 +160,15 @@ export default async function GalleryDetailPage({
 
             {/* Related Tattoos */}
             {relatedTattoos.length > 0 && (
-                <section className="px-6 py-16 sm:py-20">
+                <section className="px-4 py-12 sm:px-6 sm:py-20">
                     <div className="mx-auto max-w-7xl">
                         <div className="flex items-end justify-between gap-4">
                             <div>
-                                <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                                <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                                     More From {tattoo.artist}
                                 </p>
 
-                                <h2 className="mt-2 text-3xl font-bold">
+                                <h2 className="mt-1 sm:mt-2 text-2xl sm:text-3xl font-bold">
                                     Related Work
                                 </h2>
                             </div>
@@ -182,7 +182,7 @@ export default async function GalleryDetailPage({
                             </Link>
                         </div>
 
-                        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <div className="mt-6 sm:mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                             {relatedTattoos.map((item) => (
                                 <Link
                                     key={item.id}
@@ -200,8 +200,8 @@ export default async function GalleryDetailPage({
                                     </div>
 
                                     <div className="mt-3">
-                                        <h3 className="font-semibold">{item.title}</h3>
-                                        <p className="mt-1 text-sm text-gray-500">
+                                        <h3 className="font-semibold text-base">{item.title}</h3>
+                                        <p className="mt-1 text-xs sm:text-sm text-gray-500">
                                             {item.artist}
                                         </p>
                                     </div>
@@ -213,24 +213,24 @@ export default async function GalleryDetailPage({
             )}
 
             {/* Final CTA */}
-            <section className="bg-gray-100 px-6 py-16 sm:py-20">
+            <section className="bg-gray-100 px-4 py-12 sm:px-6 sm:py-20">
                 <div className="mx-auto max-w-3xl text-center">
-                    <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                    <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
                         Create Your Own
                     </p>
 
-                    <h2 className="mt-3 text-3xl font-bold md:text-4xl">
+                    <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
                         Ready for Your Next Tattoo?
                     </h2>
 
-                    <p className="mx-auto mt-4 max-w-xl text-gray-600">
+                    <p className="mx-auto mt-3 sm:mt-4 max-w-xl text-sm sm:text-base text-gray-600">
                         Have an idea in mind? Talk with one of our artists and turn your
                         idea into a custom piece of art.
                     </p>
 
-                    <div className="mt-7">
+                    <div className="mt-6 sm:mt-7">
                         <Link href="/appointment">
-                            <Button size="lg">
+                            <Button size="lg" className="w-full sm:w-auto">
                                 Book an Appointment
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Button>

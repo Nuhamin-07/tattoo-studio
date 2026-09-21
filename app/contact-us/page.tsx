@@ -17,17 +17,17 @@ export default function ContactPage() {
     return (
         <main>
             {/* Hero */}
-            <section className="bg-gray-950 px-4 py-20 text-white">
+            <section className="bg-gray-950 px-4 py-16 sm:py-20 text-white">
                 <div className="mx-auto max-w-5xl text-center">
-                    <p className="mb-3 text-sm font-medium uppercase tracking-widest text-gray-400">
+                    <p className="mb-2.5 sm:mb-3 text-xs sm:text-sm font-medium uppercase tracking-widest text-gray-400">
                         Get In Touch
                     </p>
 
-                    <h1 className="text-4xl font-bold md:text-5xl">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
                         Contact Us
                     </h1>
 
-                    <p className="mx-auto mt-4 max-w-2xl text-gray-400">
+                    <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base text-gray-400">
                         Have a question about our artists, services, or your next
                         tattoo? Get in touch with us and we&apos;ll be happy to help.
                     </p>
@@ -35,32 +35,32 @@ export default function ContactPage() {
             </section>
 
             {/* Contact Information + Form */}
-            <section className="px-4 py-16">
-                <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-2">
+            <section className="px-4 py-12 sm:py-16">
+                <div className="mx-auto grid max-w-6xl gap-8 sm:gap-12 lg:grid-cols-2">
                     {/* Contact Information */}
                     <div>
-                        <h2 className="text-2xl font-bold">
+                        <h2 className="text-xl sm:text-2xl font-bold">
                             Let&apos;s Talk Ink
                         </h2>
 
-                        <p className="mt-3 max-w-lg text-gray-600">
+                        <p className="mt-2 sm:mt-3 max-w-lg text-sm sm:text-base text-gray-600">
                             Whether you have a question about our services, want to
                             discuss a tattoo idea, or need more information about the
                             studio, feel free to reach out.
                         </p>
 
-                        <div className="mt-8 space-y-6">
+                        <div className="mt-6 sm:mt-8 space-y-5 sm:space-y-6">
                             {/* Phone */}
-                            <div className="flex gap-4">
+                            <div className="flex gap-3.5 sm:gap-4">
                                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
                                     <Phone className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold">Phone</h3>
+                                    <h3 className="font-semibold text-sm sm:text-base">Phone</h3>
                                     <a
                                         href="tel:+251900000000"
-                                        className="text-gray-600 hover:text-black"
+                                        className="text-sm sm:text-base text-gray-600 hover:text-black"
                                     >
                                         +251 900 000 000
                                     </a>
@@ -68,16 +68,16 @@ export default function ContactPage() {
                             </div>
 
                             {/* Email */}
-                            <div className="flex gap-4">
+                            <div className="flex gap-3.5 sm:gap-4">
                                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
                                     <Mail className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold">Email</h3>
+                                    <h3 className="font-semibold text-sm sm:text-base">Email</h3>
                                     <a
                                         href="mailto:hello@inkstudio.com"
-                                        className="text-gray-600 hover:text-black"
+                                        className="text-sm sm:text-base text-gray-600 hover:text-black break-all"
                                     >
                                         hello@inkstudio.com
                                     </a>
@@ -85,14 +85,14 @@ export default function ContactPage() {
                             </div>
 
                             {/* Address */}
-                            <div className="flex gap-4">
+                            <div className="flex gap-3.5 sm:gap-4">
                                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
                                     <MapPin className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold">Studio</h3>
-                                    <p className="text-gray-600">
+                                    <h3 className="font-semibold text-sm sm:text-base">Studio</h3>
+                                    <p className="text-sm sm:text-base text-gray-600">
                                         123 Example Street
                                         <br />
                                         Addis Ababa, Ethiopia
@@ -101,14 +101,14 @@ export default function ContactPage() {
                             </div>
 
                             {/* Hours */}
-                            <div className="flex gap-4">
+                            <div className="flex gap-3.5 sm:gap-4">
                                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
                                     <Clock className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold">Opening Hours</h3>
-                                    <p className="text-gray-600">
+                                    <h3 className="font-semibold text-sm sm:text-base">Opening Hours</h3>
+                                    <p className="text-sm sm:text-base text-gray-600">
                                         Monday – Saturday
                                         <br />
                                         9:00 AM – 7:00 PM
@@ -118,8 +118,8 @@ export default function ContactPage() {
                         </div>
 
                         {/* Social Media */}
-                        <div className="mt-10 border-t pt-8">
-                            <h3 className="font-semibold">Follow Our Work</h3>
+                        <div className="mt-8 sm:mt-10 border-t pt-6 sm:pt-8">
+                            <h3 className="font-semibold text-sm sm:text-base">Follow Our Work</h3>
 
                             <div className="mt-4 flex gap-3">
                                 <a
@@ -150,8 +150,8 @@ export default function ContactPage() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="rounded-2xl border bg-white p-6 shadow-sm md:p-8">
-                        <h2 className="text-2xl font-bold">
+                    <div className="rounded-2xl border bg-white p-5 sm:p-8 shadow-sm">
+                        <h2 className="text-xl sm:text-2xl font-bold">
                             Send Us a Message
                         </h2>
 
@@ -160,7 +160,7 @@ export default function ContactPage() {
                             as soon as possible.
                         </p>
 
-                        <form className="mt-8 space-y-6">
+                        <form className="mt-6 sm:mt-8 space-y-5 sm:space-y-6">
                             {/* Name */}
                             <div>
                                 <label
@@ -225,7 +225,7 @@ export default function ContactPage() {
                                 <select
                                     id="subject"
                                     name="subject"
-                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-ring"
+                                    className="flex h-11 md:h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm outline-none focus:ring-2 focus:ring-ring"
                                     defaultValue=""
                                     required
                                 >
@@ -286,28 +286,28 @@ export default function ContactPage() {
             </section>
 
             {/* Location */}
-            <section className="bg-gray-50 px-4 py-16">
+            <section className="bg-gray-50 px-4 py-12 sm:py-16">
                 <div className="mx-auto max-w-6xl">
-                    <div className="mb-8">
-                        <p className="text-sm font-medium uppercase tracking-widest text-gray-500">
+                    <div className="mb-6 sm:mb-8">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-widest text-gray-500">
                             Visit Us
                         </p>
 
-                        <h2 className="mt-2 text-3xl font-bold">
+                        <h2 className="mt-2 text-2xl sm:text-3xl font-bold">
                             Find Our Studio
                         </h2>
                     </div>
 
                     <div className="overflow-hidden rounded-2xl border bg-gray-200">
-                        <div className="flex h-80 items-center justify-center">
+                        <div className="flex h-64 sm:h-80 items-center justify-center p-4">
                             <div className="text-center text-gray-500">
-                                <MapPin className="mx-auto mb-3 h-10 w-10" />
+                                <MapPin className="mx-auto mb-3 h-8 w-8 sm:h-10 sm:w-10" />
 
-                                <p className="font-medium">
+                                <p className="font-medium text-base sm:text-lg text-gray-800">
                                     Studio Location
                                 </p>
 
-                                <p className="mt-1 text-sm">
+                                <p className="mt-1 text-xs sm:text-sm">
                                     123 Example Street, Addis Ababa
                                 </p>
                             </div>
@@ -317,24 +317,26 @@ export default function ContactPage() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gray-950 px-4 py-16 text-center text-white">
+            <section className="bg-gray-950 px-4 py-12 sm:py-16 text-center text-white">
                 <div className="mx-auto max-w-2xl">
-                    <h2 className="text-3xl font-bold">
+                    <h2 className="text-2xl sm:text-3xl font-bold">
                         Ready for Your Next Tattoo?
                     </h2>
 
-                    <p className="mt-3 text-gray-400">
+                    <p className="mt-3 text-sm sm:text-base text-gray-400">
                         Tell us about your idea and let&apos;s bring it to life.
                     </p>
 
-                    <Link href="/appointment">
-                        <Button
-                            size="lg"
-                            className="bg-white text-black hover:bg-gray-200"
-                        >
-                            Book an Appointment
-                        </Button>
-                    </Link>
+                    <div className="mt-6">
+                        <Link href="/appointment">
+                            <Button
+                                size="lg"
+                                className="bg-white text-black hover:bg-gray-200 w-full sm:w-auto"
+                            >
+                                Book an Appointment
+                            </Button>
+                        </Link>
+                    </div>
                 </div>
             </section>
         </main>

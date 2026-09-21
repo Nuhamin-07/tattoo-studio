@@ -17,17 +17,17 @@ export default function AppointmentPage() {
     return (
         <main>
             {/* Hero */}
-            <section className="bg-gray-950 px-6 py-24 text-white">
+            <section className="bg-gray-950 px-4 py-16 sm:px-6 sm:py-24 text-white">
                 <div className="mx-auto max-w-4xl text-center">
-                    <p className="text-sm uppercase tracking-[0.2em] text-gray-400">
+                    <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-400">
                         Start Your Tattoo Journey
                     </p>
 
-                    <h1 className="mt-4 text-5xl font-bold md:text-6xl">
+                    <h1 className="mt-3 sm:mt-4 text-3xl sm:text-5xl md:text-6xl font-bold">
                         Book an Appointment
                     </h1>
 
-                    <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-400">
+                    <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-sm sm:text-lg text-gray-400">
                         Tell us about your idea and we'll connect you with the
                         right artist.
                     </p>
@@ -35,28 +35,28 @@ export default function AppointmentPage() {
             </section>
 
             {/* Main Content */}
-            <section className="px-6 py-20">
-                <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1.2fr]">
+            <section className="px-4 py-12 sm:px-6 sm:py-20">
+                <div className="mx-auto grid max-w-7xl gap-8 sm:gap-10 lg:grid-cols-[1fr_1.2fr]">
                     {/* Left Side */}
                     <div>
-                        <div className="overflow-hidden rounded-3xl">
+                        <div className="overflow-hidden rounded-2xl sm:rounded-3xl">
                             <Image
                                 src="/images/appointment-bg.jpg"
                                 alt="Tattoo Studio"
                                 width={800}
                                 height={1000}
-                                className="h-[500px] w-full object-cover"
+                                className="h-64 sm:h-80 lg:h-[500px] w-full object-cover"
                             />
                         </div>
 
-                        <div className="mt-8 rounded-3xl bg-gray-100 p-8">
-                            <h3 className="text-2xl font-bold">
+                        <div className="mt-6 sm:mt-8 rounded-2xl sm:rounded-3xl bg-gray-100 p-6 sm:p-8">
+                            <h3 className="text-xl sm:text-2xl font-bold">
                                 What Happens Next?
                             </h3>
 
-                            <div className="mt-6 space-y-6">
+                            <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6">
                                 <div>
-                                    <h4 className="font-semibold">
+                                    <h4 className="font-semibold text-base sm:text-lg">
                                         1. Submit Your Request
                                     </h4>
                                     <p className="text-sm text-gray-600">
@@ -65,7 +65,7 @@ export default function AppointmentPage() {
                                 </div>
 
                                 <div>
-                                    <h4 className="font-semibold">
+                                    <h4 className="font-semibold text-base sm:text-lg">
                                         2. Consultation
                                     </h4>
                                     <p className="text-sm text-gray-600">
@@ -74,7 +74,7 @@ export default function AppointmentPage() {
                                 </div>
 
                                 <div>
-                                    <h4 className="font-semibold">
+                                    <h4 className="font-semibold text-base sm:text-lg">
                                         3. Get Tattooed
                                     </h4>
                                     <p className="text-sm text-gray-600">
@@ -86,14 +86,14 @@ export default function AppointmentPage() {
                     </div>
 
                     {/* Form */}
-                    <form className="space-y-10">
+                    <form className="space-y-8 sm:space-y-10">
                         {/* Artist */}
                         <section>
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-xl sm:text-2xl font-bold">
                                 Choose Your Artist
                             </h2>
 
-                            <div className="mt-6 grid grid-cols-2 gap-4">
+                            <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 {artists.map((artist) => (
                                     <label
                                         key={artist.name}
@@ -111,15 +111,15 @@ export default function AppointmentPage() {
                                                 alt={artist.name}
                                                 width={300}
                                                 height={300}
-                                                className="h-40 w-full object-cover"
+                                                className="h-36 sm:h-40 w-full object-cover"
                                             />
 
-                                            <div className="p-4">
-                                                <h3 className="font-semibold">
+                                            <div className="p-3.5 sm:p-4">
+                                                <h3 className="font-semibold text-base">
                                                     {artist.name}
                                                 </h3>
 
-                                                <p className="text-sm text-gray-500">
+                                                <p className="text-xs sm:text-sm text-gray-500">
                                                     {artist.specialty}
                                                 </p>
                                             </div>
@@ -131,11 +131,11 @@ export default function AppointmentPage() {
 
                         {/* Service */}
                         <section>
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-xl sm:text-2xl font-bold">
                                 Service
                             </h2>
 
-                            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                            <div className="mt-4 sm:mt-6 grid gap-3 sm:grid-cols-2">
                                 {services.map((service) => (
                                     <label
                                         key={service}
@@ -147,7 +147,7 @@ export default function AppointmentPage() {
                                             className="peer sr-only"
                                         />
 
-                                        <div className="rounded-xl border p-4 transition-all hover:bg-gray-50 peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
+                                        <div className="rounded-xl border p-3.5 sm:p-4 text-sm sm:text-base font-medium transition-all hover:bg-gray-50 peer-checked:border-black peer-checked:bg-black peer-checked:text-white">
                                             {service}
                                         </div>
                                     </label>
@@ -157,11 +157,11 @@ export default function AppointmentPage() {
 
                         {/* Tattoo Details */}
                         <section>
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-xl sm:text-2xl font-bold">
                                 Tattoo Details
                             </h2>
 
-                            <div className="mt-6 space-y-5">
+                            <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-5">
                                 <Textarea
                                     placeholder="Describe your tattoo idea..."
                                     className="min-h-32"
@@ -173,16 +173,16 @@ export default function AppointmentPage() {
                                     <Input placeholder="Approximate Size" />
                                 </div>
 
-                                <div className="rounded-xl border border-dashed p-6 text-center">
-                                    <Upload className="mx-auto mb-3 h-6 w-6 text-gray-400" />
+                                <div className="rounded-xl border border-dashed p-4 sm:p-6 text-center">
+                                    <Upload className="mx-auto mb-2 sm:mb-3 h-6 w-6 text-gray-400" />
 
-                                    <p className="text-sm text-gray-500">
+                                    <p className="text-sm text-gray-500 font-medium">
                                         Upload reference images
                                     </p>
 
                                     <input
                                         type="file"
-                                        className="mt-4"
+                                        className="mt-3 sm:mt-4 text-xs sm:text-sm max-w-full"
                                         accept="image/*"
                                     />
                                 </div>
@@ -191,13 +191,13 @@ export default function AppointmentPage() {
 
                         {/* Date & Time */}
                         <section>
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-xl sm:text-2xl font-bold">
                                 Preferred Date & Time
                             </h2>
 
-                            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                            <div className="mt-4 sm:mt-6 grid gap-4 sm:grid-cols-2">
                                 <div className="relative">
-                                    <CalendarDays className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+                                    <CalendarDays className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-500" />
 
                                     <Input
                                         type="date"
@@ -206,7 +206,7 @@ export default function AppointmentPage() {
                                 </div>
 
                                 <div className="relative">
-                                    <Clock3 className="absolute left-3 top-3 h-4 w-4 text-gray-500" />
+                                    <Clock3 className="absolute left-3 top-3.5 sm:top-3 h-4 w-4 text-gray-500" />
 
                                     <Input
                                         type="time"
@@ -218,11 +218,11 @@ export default function AppointmentPage() {
 
                         {/* Contact */}
                         <section>
-                            <h2 className="text-2xl font-bold">
+                            <h2 className="text-xl sm:text-2xl font-bold">
                                 Your Information
                             </h2>
 
-                            <div className="mt-6 grid gap-4">
+                            <div className="mt-4 sm:mt-6 grid gap-4">
                                 <Input placeholder="Full Name" />
 
                                 <Input
@@ -244,7 +244,7 @@ export default function AppointmentPage() {
                             Request Appointment
                         </Button>
 
-                        <p className="text-center text-sm text-gray-500">
+                        <p className="text-center text-xs sm:text-sm text-gray-500">
                             Our team will review your request and contact you to
                             confirm your appointment.
                         </p>

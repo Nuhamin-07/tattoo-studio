@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="mt-20 bg-gray-950 text-gray-400">
-            <div className="mx-auto max-w-7xl px-6 py-16">
-                <div className="grid gap-12 md:grid-cols-4">
+        <footer className="mt-12 sm:mt-20 bg-gray-950 text-gray-400">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+                <div className="grid gap-8 sm:gap-10 md:grid-cols-4">
                     {/* Brand */}
                     <div>
                         <h3 className="text-2xl font-bold text-white">
@@ -136,7 +136,7 @@ export default function Footer() {
                         <div className="space-y-4">
                             <div className="flex gap-3">
                                 <MapPin className="mt-1 h-4 w-4 shrink-0" />
-                                <span>
+                                <span className="break-words">
                                     Kera Downtown Building
                                     <br />
                                     Addis Ababa, Ethiopia
@@ -150,26 +150,26 @@ export default function Footer() {
 
                             <div className="flex gap-3">
                                 <Mail className="h-4 w-4 shrink-0" />
-                                <span>info@artofink.com</span>
+                                <span className="break-all">info@artofink.com</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* CTA */}
-                <div className="mt-16 rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-                    <h3 className="text-2xl font-bold text-white">
+                <div className="mt-12 sm:mt-16 rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 text-center">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white">
                         Ready for Your Next Tattoo?
                     </h3>
 
-                    <p className="mx-auto mt-3 max-w-xl">
+                    <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base">
                         Let's bring your idea to life with a custom tattoo
                         designed just for you.
                     </p>
 
                     <Link
                         href="/appointment"
-                        className="mt-6 inline-block rounded-full bg-white px-6 py-3 font-medium text-black transition hover:bg-gray-200"
+                        className="mt-6 inline-block rounded-full bg-white px-6 py-3 font-medium text-black transition hover:bg-gray-200 text-sm sm:text-base"
                     >
                         Book an Appointment
                     </Link>
@@ -178,8 +178,8 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="border-t border-white/10">
-                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm md:flex-row">
-                    <p>
+                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 sm:px-6 py-6 text-xs sm:text-sm md:flex-row">
+                    <p className="text-center md:text-left">
                         © 2026 Art of Ink. All rights reserved.
                     </p>
 
