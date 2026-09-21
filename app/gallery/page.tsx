@@ -75,4 +75,4 @@ export default function GalleryPage() {
             <Footer />
         </main>
     );
-}
+} 
