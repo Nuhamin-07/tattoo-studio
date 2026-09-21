@@ -39,11 +39,11 @@ export default function ContactPage() {
                 <div className="mx-auto grid max-w-6xl gap-8 sm:gap-12 lg:grid-cols-2">
                     {/* Contact Information */}
                     <div>
-                        <h2 className="text-xl sm:text-2xl font-bold">
+                        <h2 className="text-xl sm:text-2xl font-bold text-gray-950 dark:text-white">
                             Let&apos;s Talk Ink
                         </h2>
 
-                        <p className="mt-2 sm:mt-3 max-w-lg text-sm sm:text-base text-gray-600">
+                        <p className="mt-2 sm:mt-3 max-w-lg text-sm sm:text-base text-gray-600 dark:text-gray-300">
                             Whether you have a question about our services, want to
                             discuss a tattoo idea, or need more information about the
                             studio, feel free to reach out.
@@ -52,15 +52,15 @@ export default function ContactPage() {
                         <div className="mt-6 sm:mt-8 space-y-5 sm:space-y-6">
                             {/* Phone */}
                             <div className="flex gap-3.5 sm:gap-4">
-                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800 text-gray-900 dark:text-white">
                                     <Phone className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold text-sm sm:text-base">Phone</h3>
+                                    <h3 className="font-semibold text-sm sm:text-base text-gray-950 dark:text-white">Phone</h3>
                                     <a
                                         href="tel:+251900000000"
-                                        className="text-sm sm:text-base text-gray-600 hover:text-black"
+                                        className="text-sm sm:text-base text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition"
                                     >
                                         +251 900 000 000
                                     </a>
@@ -69,15 +69,15 @@ export default function ContactPage() {
 
                             {/* Email */}
                             <div className="flex gap-3.5 sm:gap-4">
-                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800 text-gray-900 dark:text-white">
                                     <Mail className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold text-sm sm:text-base">Email</h3>
+                                    <h3 className="font-semibold text-sm sm:text-base text-gray-950 dark:text-white">Email</h3>
                                     <a
                                         href="mailto:hello@inkstudio.com"
-                                        className="text-sm sm:text-base text-gray-600 hover:text-black break-all"
+                                        className="text-sm sm:text-base text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white transition break-all"
                                     >
                                         hello@inkstudio.com
                                     </a>
@@ -86,13 +86,13 @@ export default function ContactPage() {
 
                             {/* Address */}
                             <div className="flex gap-3.5 sm:gap-4">
-                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800 text-gray-900 dark:text-white">
                                     <MapPin className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold text-sm sm:text-base">Studio</h3>
-                                    <p className="text-sm sm:text-base text-gray-600">
+                                    <h3 className="font-semibold text-sm sm:text-base text-gray-950 dark:text-white">Studio</h3>
+                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                                         123 Example Street
                                         <br />
                                         Addis Ababa, Ethiopia
@@ -102,13 +102,13 @@ export default function ContactPage() {
 
                             {/* Hours */}
                             <div className="flex gap-3.5 sm:gap-4">
-                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100">
+                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800 text-gray-900 dark:text-white">
                                     <Clock className="h-5 w-5" />
                                 </div>
 
                                 <div>
-                                    <h3 className="font-semibold text-sm sm:text-base">Opening Hours</h3>
-                                    <p className="text-sm sm:text-base text-gray-600">
+                                    <h3 className="font-semibold text-sm sm:text-base text-gray-950 dark:text-white">Opening Hours</h3>
+                                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                                         Monday – Saturday
                                         <br />
                                         9:00 AM – 7:00 PM
@@ -118,14 +118,14 @@ export default function ContactPage() {
                         </div>
 
                         {/* Social Media */}
-                        <div className="mt-8 sm:mt-10 border-t pt-6 sm:pt-8">
-                            <h3 className="font-semibold text-sm sm:text-base">Follow Our Work</h3>
+                        <div className="mt-8 sm:mt-10 border-t border-gray-200 dark:border-gray-800 pt-6 sm:pt-8">
+                            <h3 className="font-semibold text-sm sm:text-base text-gray-950 dark:text-white">Follow Our Work</h3>
 
                             <div className="mt-4 flex gap-3">
                                 <a
                                     href="#"
                                     aria-label="Instagram"
-                                    className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
+                                    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
                                 >
                                     <FaInstagram />
                                 </a>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                                 <a
                                     href="#"
                                     aria-label="Facebook"
-                                    className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
+                                    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
                                 >
                                     <FaFacebook />
                                 </a>
@@ -141,7 +141,7 @@ export default function ContactPage() {
                                 <a
                                     href="#"
                                     aria-label="TikTok"
-                                    className="flex h-10 w-10 items-center justify-center rounded-full border text-sm font-semibold transition hover:bg-black hover:text-white"
+                                    className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-gray-800 text-gray-700 dark:text-gray-300 text-sm font-semibold transition hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
                                 >
                                     <FaTiktok />
                                 </a>
@@ -150,12 +150,12 @@ export default function ContactPage() {
                     </div>
 
                     {/* Contact Form */}
-                    <div className="rounded-2xl border bg-white p-5 sm:p-8 shadow-sm">
-                        <h2 className="text-xl sm:text-2xl font-bold">
+                    <div className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/60 p-5 sm:p-8 shadow-sm">
+                        <h2 className="text-xl sm:text-2xl font-bold text-gray-950 dark:text-white">
                             Send Us a Message
                         </h2>
 
-                        <p className="mt-2 text-sm text-gray-600">
+                        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
                             Fill out the form below and we&apos;ll get back to you
                             as soon as possible.
                         </p>
@@ -165,7 +165,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="name"
-                                    className="mb-2 block text-sm font-medium"
+                                    className="mb-2 block text-sm font-medium text-gray-950 dark:text-gray-200"
                                 >
                                     Full Name
                                 </label>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="email"
-                                    className="mb-2 block text-sm font-medium"
+                                    className="mb-2 block text-sm font-medium text-gray-950 dark:text-gray-200"
                                 >
                                     Email
                                 </label>
@@ -200,7 +200,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="phone"
-                                    className="mb-2 block text-sm font-medium"
+                                    className="mb-2 block text-sm font-medium text-gray-950 dark:text-gray-200"
                                 >
                                     Phone Number
                                 </label>
@@ -217,7 +217,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="subject"
-                                    className="mb-2 block text-sm font-medium"
+                                    className="mb-2 block text-sm font-medium text-gray-950 dark:text-gray-200"
                                 >
                                     Subject
                                 </label>
@@ -225,29 +225,29 @@ export default function ContactPage() {
                                 <select
                                     id="subject"
                                     name="subject"
-                                    className="flex h-11 md:h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base md:text-sm outline-none focus:ring-2 focus:ring-ring"
+                                    className="flex h-11 md:h-10 w-full rounded-md border border-input bg-background dark:bg-gray-900 text-foreground dark:text-white px-3 py-2 text-base md:text-sm outline-none focus:ring-2 focus:ring-ring"
                                     defaultValue=""
                                     required
                                 >
-                                    <option value="" disabled>
+                                    <option value="" disabled className="dark:bg-gray-900">
                                         Select a subject
                                     </option>
-                                    <option value="general">
+                                    <option value="general" className="dark:bg-gray-900">
                                         General Question
                                     </option>
-                                    <option value="tattoo">
+                                    <option value="tattoo" className="dark:bg-gray-900">
                                         Tattoo Inquiry
                                     </option>
-                                    <option value="pricing">
+                                    <option value="pricing" className="dark:bg-gray-900">
                                         Pricing
                                     </option>
-                                    <option value="aftercare">
+                                    <option value="aftercare" className="dark:bg-gray-900">
                                         Aftercare
                                     </option>
-                                    <option value="artist">
+                                    <option value="artist" className="dark:bg-gray-900">
                                         Artist Inquiry
                                     </option>
-                                    <option value="other">
+                                    <option value="other" className="dark:bg-gray-900">
                                         Other
                                     </option>
                                 </select>
@@ -257,7 +257,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="message"
-                                    className="mb-2 block text-sm font-medium"
+                                    className="mb-2 block text-sm font-medium text-gray-950 dark:text-gray-200"
                                 >
                                     Message
                                 </label>
@@ -275,7 +275,7 @@ export default function ContactPage() {
                             <Button
                                 type="submit"
                                 size="lg"
-                                className="w-full"
+                                className="w-full bg-gray-950 text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
                             >
                                 <Send className="mr-2 h-4 w-4" />
                                 Send Message
@@ -286,28 +286,28 @@ export default function ContactPage() {
             </section>
 
             {/* Location */}
-            <section className="bg-gray-50 px-4 py-12 sm:py-16">
+            <section className="bg-gray-50 dark:bg-gray-900/50 px-4 py-12 sm:py-16 border-t border-transparent dark:border-gray-800">
                 <div className="mx-auto max-w-6xl">
                     <div className="mb-6 sm:mb-8">
-                        <p className="text-xs sm:text-sm font-medium uppercase tracking-widest text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400">
                             Visit Us
                         </p>
 
-                        <h2 className="mt-2 text-2xl sm:text-3xl font-bold">
+                        <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-gray-950 dark:text-white">
                             Find Our Studio
                         </h2>
                     </div>
 
-                    <div className="overflow-hidden rounded-2xl border bg-gray-200">
+                    <div className="overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-gray-200 dark:bg-gray-900">
                         <div className="flex h-64 sm:h-80 items-center justify-center p-4">
-                            <div className="text-center text-gray-500">
-                                <MapPin className="mx-auto mb-3 h-8 w-8 sm:h-10 sm:w-10" />
+                            <div className="text-center text-gray-500 dark:text-gray-400">
+                                <MapPin className="mx-auto mb-3 h-8 w-8 sm:h-10 sm:w-10 text-gray-700 dark:text-gray-300" />
 
-                                <p className="font-medium text-base sm:text-lg text-gray-800">
+                                <p className="font-medium text-base sm:text-lg text-gray-900 dark:text-white">
                                     Studio Location
                                 </p>
 
-                                <p className="mt-1 text-xs sm:text-sm">
+                                <p className="mt-1 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                                     123 Example Street, Addis Ababa
                                 </p>
                             </div>

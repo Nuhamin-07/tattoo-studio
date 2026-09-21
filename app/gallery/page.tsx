@@ -10,15 +10,15 @@ export default function GalleryPage() {
         <main className="min-h-screen">
             {/* Hero / Header */}
             <section className="px-4 pb-10 pt-12 text-center sm:px-6 sm:pb-12 sm:pt-20">
-                <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gray-500">
+                <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] sm:tracking-[0.25em] text-gray-500 dark:text-zinc-400">
                     Our Work
                 </p>
 
-                <h1 className="mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl font-bold">
+                <h1 className="mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl font-bold dark:text-zinc-100">
                     Tattoo Gallery
                 </h1>
 
-                <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-500 md:text-lg">
+                <p className="mx-auto mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-500 dark:text-zinc-400 md:text-lg">
                     Explore tattoos created by our artists across a variety of styles,
                     from delicate fine line work to bold custom designs.
                 </p>
@@ -32,7 +32,7 @@ export default function GalleryPage() {
                             <Link
                                 key={image.id}
                                 href={`/gallery/${image.id}`}
-                                className="group relative block overflow-hidden rounded-2xl bg-gray-100"
+                                className="group relative block overflow-hidden rounded-2xl bg-gray-100 dark:bg-zinc-900 border border-transparent dark:border-zinc-800"
                             >
                                 {/* Image */}
                                 <div className="relative aspect-[4/5] overflow-hidden">

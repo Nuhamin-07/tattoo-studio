@@ -111,15 +111,15 @@ export default function AboutPage() {
 
                     {/* Content */}
                     <div>
-                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
                             Our Story
                         </p>
 
-                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
                             More Than Just Ink
                         </h2>
 
-                        <div className="mt-4 sm:mt-6 space-y-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+                        <div className="mt-4 sm:mt-6 space-y-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600 dark:text-gray-300">
                             <p>
                                 We believe every tattoo has a story behind it.
                                 Our studio was created as a space where
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
                         <Link
                             href="/appointment"
-                            className="mt-6 sm:mt-8 inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition hover:gap-3"
+                            className="mt-6 sm:mt-8 inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition text-gray-900 hover:text-black dark:text-gray-100 dark:hover:text-white hover:gap-3"
                         >
                             Start Your Tattoo Journey
                             <ArrowRight className="h-4 w-4" />
@@ -154,7 +154,7 @@ export default function AboutPage() {
             </section>
 
             {/* Philosophy */}
-            <section className="bg-gray-950 px-4 py-12 sm:py-20 text-white sm:px-6 lg:px-8">
+            <section className="bg-gray-950 dark:bg-black px-4 py-12 sm:py-20 text-white sm:px-6 lg:px-8 border-t border-transparent dark:border-gray-900">
                 <div className="mx-auto max-w-6xl">
                     <div className="mx-auto max-w-2xl text-center">
                         <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
@@ -179,13 +179,13 @@ export default function AboutPage() {
                             return (
                                 <div
                                     key={value.title}
-                                    className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 transition hover:bg-white/10"
+                                    className="rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 transition hover:bg-white/10 dark:border-gray-800 dark:bg-gray-900/60"
                                 >
-                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-black">
+                                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-black dark:bg-gray-100">
                                         <Icon className="h-6 w-6" />
                                     </div>
 
-                                    <h3 className="mt-6 text-lg sm:text-xl font-semibold">
+                                    <h3 className="mt-6 text-lg sm:text-xl font-semibold text-white">
                                         {value.title}
                                     </h3>
 
@@ -204,15 +204,15 @@ export default function AboutPage() {
                 <div className="mx-auto max-w-6xl">
                     <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
                         <div>
-                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
                                 The Team
                             </p>
 
-                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
                                 Meet Our Artists
                             </h2>
 
-                            <p className="mt-2 sm:mt-3 max-w-xl text-sm sm:text-base text-gray-600">
+                            <p className="mt-2 sm:mt-3 max-w-xl text-sm sm:text-base text-gray-600 dark:text-gray-300">
                                 Our artists bring different styles,
                                 perspectives, and creative approaches to every
                                 piece.
@@ -221,7 +221,7 @@ export default function AboutPage() {
 
                         <Link
                             href="/artists"
-                            className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold hover:gap-3"
+                            className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-gray-900 hover:text-black dark:text-gray-200 dark:hover:text-white hover:gap-3"
                         >
                             Meet the Team
                             <ArrowRight className="h-4 w-4" />
@@ -235,7 +235,7 @@ export default function AboutPage() {
                                 href={`/artists/${artist.name.toLowerCase()}`}
                                 className="group"
                             >
-                                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100">
+                                <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800">
                                     <Image
                                         src={artist.image}
                                         alt={artist.name}
@@ -261,19 +261,19 @@ export default function AboutPage() {
             </section>
 
             {/* Studio */}
-            <section className="bg-gray-50 px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
+            <section className="bg-gray-50 dark:bg-gray-900/50 px-4 py-12 sm:py-20 sm:px-6 lg:px-8 border-t border-transparent dark:border-gray-800">
                 <div className="mx-auto max-w-6xl">
                     <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-2">
                         <div>
-                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
                                 The Experience
                             </p>
 
-                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+                            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
                                 A Studio Built Around You
                             </h2>
 
-                            <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+                            <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600 dark:text-gray-300">
                                 Getting a tattoo should be an experience you
                                 feel comfortable with from beginning to end.
                                 Our studio is designed to provide a relaxed,
@@ -281,7 +281,7 @@ export default function AboutPage() {
                                 directly with your artist.
                             </p>
 
-                            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+                            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600 dark:text-gray-300">
                                 We believe good communication is just as
                                 important as good artwork. That is why we take
                                 the time to understand your ideas, answer your
@@ -290,7 +290,7 @@ export default function AboutPage() {
                             </p>
                         </div>
 
-                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                        <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-transparent dark:border-gray-800">
                             <Image
                                 src="/images/studio-2.jfif"
                                 alt="Tattoo studio interior"
@@ -306,15 +306,15 @@ export default function AboutPage() {
             <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="mx-auto max-w-2xl text-center">
-                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+                        <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
                             From Start to Finish
                         </p>
 
-                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+                        <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
                             What You Can Expect
                         </h2>
 
-                        <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600">
+                        <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
                             We want every part of your tattoo experience to
                             feel professional, comfortable, and personal.
                         </p>
@@ -327,23 +327,23 @@ export default function AboutPage() {
                             return (
                                 <div
                                     key={item.title}
-                                    className="rounded-2xl border bg-white p-6 shadow-sm"
+                                    className="rounded-2xl border bg-white dark:bg-gray-900/60 dark:border-gray-800 p-6 shadow-sm"
                                 >
                                     <div className="flex items-center justify-between">
-                                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950 text-white">
+                                        <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gray-950 dark:bg-white text-white dark:text-black">
                                             <Icon className="h-5 w-5" />
                                         </div>
 
-                                        <span className="text-sm font-semibold text-gray-300">
+                                        <span className="text-sm font-semibold text-gray-300 dark:text-gray-600">
                                             0{index + 1}
                                         </span>
                                     </div>
 
-                                    <h3 className="mt-6 font-semibold">
+                                    <h3 className="mt-6 font-semibold text-gray-950 dark:text-white">
                                         {item.title}
                                     </h3>
 
-                                    <p className="mt-2 text-sm leading-6 text-gray-600">
+                                    <p className="mt-2 text-sm leading-6 text-gray-600 dark:text-gray-400">
                                         {item.description}
                                     </p>
                                 </div>

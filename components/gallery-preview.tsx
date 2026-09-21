@@ -8,9 +8,9 @@ export default function Gallery() {
         <section>
             <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {galleries.map((image) => (
-                    <Card key={image.title} className="p-0 overflow-hidden">
+                    <Card key={image.title} className="p-0 overflow-hidden dark:bg-gray-900/60 dark:border-gray-800">
                         <Tooltip>
-                            <TooltipTrigger className="relative aspect-[4/5] sm:aspect-square md:aspect-[4/5] w-full overflow-hidden cursor-pointer group">
+                            <TooltipTrigger>
                                 <div className="relative aspect-[4/5] sm:aspect-square md:aspect-[4/5] w-full overflow-hidden cursor-pointer group">
                                     <Image
                                         src={image.image}
@@ -19,15 +19,15 @@ export default function Gallery() {
                                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
                                         <p className="font-semibold text-sm sm:text-base">{image.title}</p>
                                         <p className="text-xs text-gray-300">by {image.artist}</p>
                                     </div>
                                 </div>
                             </TooltipTrigger>
-                            <TooltipContent>
+                            <TooltipContent className="dark:bg-gray-900 dark:border-gray-800 dark:text-white">
                                 <p className="font-semibold">{image.title}</p>
-                                <p className="text-xs text-muted-foreground">by {image.artist}</p>
+                                <p className="text-xs text-muted-foreground dark:text-gray-400">by {image.artist}</p>
                             </TooltipContent>
                         </Tooltip>
                     </Card>

@@ -108,15 +108,15 @@ export default function Home() {
       <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
               Our Work
             </p>
 
-            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
               Recent Tattoos
             </h2>
 
-            <p className="mx-auto mt-2 sm:mt-3 max-w-2xl text-sm sm:text-base text-gray-600">
+            <p className="mx-auto mt-2 sm:mt-3 max-w-2xl text-sm sm:text-base text-gray-600 dark:text-gray-300">
               A selection of tattoos created by our artists,
               from delicate fine line pieces to bold custom
               designs.
@@ -130,7 +130,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition hover:gap-3"
+              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition text-gray-900 hover:text-black dark:text-gray-200 dark:hover:text-white hover:gap-3"
             >
               View Full Gallery
               <ArrowRight className="h-4 w-4" />
@@ -143,15 +143,15 @@ export default function Home() {
       <section className="px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+            <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
               Meet The Artists
             </p>
 
-            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+            <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
               The Artists Behind the Ink
             </h2>
 
-            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+            <p className="mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600 dark:text-gray-300">
               Our artists bring different styles, techniques, and creative
               perspectives to every piece we create.
             </p>
@@ -164,7 +164,7 @@ export default function Home() {
                 href={`/artists/${artist.name.toLowerCase()}`}
                 className="group"
               >
-                <div className="overflow-hidden rounded-2xl bg-gray-100">
+                <div className="overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-900 border border-transparent dark:border-gray-800">
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
                       src={artist.image}
@@ -177,11 +177,11 @@ export default function Home() {
                 </div>
 
                 <div className="mt-4">
-                  <h3 className="text-lg font-semibold">
+                  <h3 className="text-lg font-semibold text-gray-950 dark:text-white">
                     {artist.name}
                   </h3>
 
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
                     {artist.role}
                   </p>
                 </div>
@@ -192,7 +192,7 @@ export default function Home() {
           <div className="mt-8 sm:mt-10 text-center">
             <Link
               href="/artists"
-              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition-all hover:gap-3"
+              className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold transition-all text-gray-900 hover:text-black dark:text-gray-200 dark:hover:text-white hover:gap-3"
             >
               Meet All Artists
               <ArrowRight className="h-4 w-4" />
@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-gray-950 px-4 py-12 sm:py-20 text-white sm:px-6 lg:px-8">
+      <section className="bg-gray-950 dark:bg-black px-4 py-12 sm:py-20 text-white sm:px-6 lg:px-8 border-t border-transparent dark:border-gray-900">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-400">
@@ -227,13 +227,13 @@ export default function Home() {
               return (
                 <div
                   key={reason.title}
-                  className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+                  className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10 dark:border-gray-800 dark:bg-gray-900/60"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-black">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-black dark:bg-gray-100">
                     <Icon className="h-5 w-5" />
                   </div>
 
-                  <h3 className="mt-5 text-lg font-semibold">
+                  <h3 className="mt-5 text-lg font-semibold text-white">
                     {reason.title}
                   </h3>
 
@@ -248,17 +248,17 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative overflow-hidden bg-gray-100 px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-gray-100 dark:bg-gray-900/50 px-4 py-12 sm:py-20 sm:px-6 lg:px-8 border-t border-transparent dark:border-gray-800">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
+          <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
             Your Idea. Your Story. Your Ink.
           </p>
 
-          <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl">
+          <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold md:text-4xl text-gray-950 dark:text-white">
             Ready to Create Something Permanent?
           </h2>
 
-          <p className="mx-auto mt-3 sm:mt-4 max-w-xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+          <p className="mx-auto mt-3 sm:mt-4 max-w-xl text-sm sm:text-base leading-6 sm:leading-7 text-gray-600 dark:text-gray-300">
             Tell us about your idea and let&apos;s work together
             to turn it into a tattoo you&apos;ll be proud to wear.
           </p>
@@ -267,7 +267,7 @@ export default function Home() {
             <Link href="/appointment">
               <Button
                 size="lg"
-                className="bg-gray-950 text-white hover:bg-gray-800 w-full sm:w-auto"
+                className="bg-gray-950 text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 w-full sm:w-auto"
               >
                 Book an Appointment
                 <ArrowRight className="ml-2 h-4 w-4" />

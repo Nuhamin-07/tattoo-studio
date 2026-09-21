@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="mt-12 sm:mt-20 bg-gray-950 text-gray-400">
+        <footer className="mt-12 sm:mt-20 bg-gray-950 text-gray-400 dark:bg-black dark:border-t dark:border-gray-900 transition-colors">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
                 <div className="grid gap-8 sm:gap-10 md:grid-cols-4">
                     {/* Brand */}
@@ -13,7 +13,7 @@ export default function Footer() {
                             Art of Ink
                         </h3>
 
-                        <p className="mt-4 leading-7">
+                        <p className="mt-4 leading-7 text-gray-400">
                             Crafting meaningful tattoos through creativity,
                             precision, and artistic expression.
                         </p>
@@ -135,7 +135,7 @@ export default function Footer() {
 
                         <div className="space-y-4">
                             <div className="flex gap-3">
-                                <MapPin className="mt-1 h-4 w-4 shrink-0" />
+                                <MapPin className="mt-1 h-4 w-4 shrink-0 text-gray-400" />
                                 <span className="break-words">
                                     Kera Downtown Building
                                     <br />
@@ -144,12 +144,12 @@ export default function Footer() {
                             </div>
 
                             <div className="flex gap-3">
-                                <Phone className="h-4 w-4 shrink-0" />
+                                <Phone className="h-4 w-4 shrink-0 text-gray-400" />
                                 <span>+251 912 00 00 00</span>
                             </div>
 
                             <div className="flex gap-3">
-                                <Mail className="h-4 w-4 shrink-0" />
+                                <Mail className="h-4 w-4 shrink-0 text-gray-400" />
                                 <span className="break-all">info@artofink.com</span>
                             </div>
                         </div>
@@ -157,12 +157,12 @@ export default function Footer() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-12 sm:mt-16 rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 text-center">
+                <div className="mt-12 sm:mt-16 rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 text-center dark:border-gray-800 dark:bg-gray-900/60">
                     <h3 className="text-xl sm:text-2xl font-bold text-white">
                         Ready for Your Next Tattoo?
                     </h3>
 
-                    <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base">
+                    <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base text-gray-300">
                         Let's bring your idea to life with a custom tattoo
                         designed just for you.
                     </p>
@@ -177,7 +177,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/10">
+            <div className="border-t border-white/10 dark:border-gray-900">
                 <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 sm:px-6 py-6 text-xs sm:text-sm md:flex-row">
                     <p className="text-center md:text-left">
                         © 2026 Art of Ink. All rights reserved.
