@@ -47,11 +47,10 @@ export default function Navbar() {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`relative text-sm font-medium transition-colors ${
-                                    isActive
+                                className={`relative text-sm font-medium transition-colors ${isActive
                                         ? "text-black dark:text-white font-semibold"
                                         : "text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
-                                }`}
+                                    }`}
                             >
                                 {link.label}
 
@@ -104,11 +103,10 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`rounded-lg px-3 py-2.5 text-base font-medium transition-colors ${
-                                        isActive
+                                    className={`rounded-lg px-3 py-2.5 text-base font-medium transition-colors ${isActive
                                             ? "bg-gray-100 text-black font-semibold dark:bg-gray-900 dark:text-white"
                                             : "text-gray-600 hover:bg-gray-50 hover:text-black dark:text-gray-300 dark:hover:bg-gray-900/60 dark:hover:text-white"
-                                    }`}
+                                        }`}
                                 >
                                     {link.label}
                                 </Link>
